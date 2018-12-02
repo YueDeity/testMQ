@@ -1,6 +1,5 @@
 package com.MQ.testMQ;
 
-import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class TestMqApplicationTests {
 
-	private static final  ObjectMapper MAPPER = new ObjectMapper();
+	private static final ObjectMapper MAPPER = new ObjectMapper();
 
 	@Autowired
 	private RabbitTemplate template;
