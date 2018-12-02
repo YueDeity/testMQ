@@ -24,6 +24,7 @@ public class TestMqApplicationTests {
 		us.setName("张三");
 		us.setAge("18");
 		/*String context = "item.update";*/
+		//上传成功GITBUH
 		System.out.println("Sender : " + us);
 		this.template.convertAndSend("topicExchange","item.add", toJsonStr(us));
 	}
